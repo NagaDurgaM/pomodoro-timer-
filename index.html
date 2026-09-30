@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pomodoro Timer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>🍅 Pomodoro Timer</h1>
+            <p>Focus better. Work smarter.</p>
+        </header>
+
+
+        <!-- Timer Card -->
+        <section class="timer-card">
+
+            <!-- Session Type -->
+            <div class="session-buttons">
+
+                <button
+                    class="session-btn active"
+                    id="focusBtn"
+                >
+                    Focus
+                </button>
+
+                <button
+                    class="session-btn"
+                    id="shortBreakBtn"
+                >
+                    Short Break
+                </button>
+
+                <button
+                    class="session-btn"
+                    id="longBreakBtn"
+                >
+                    Long Break
+                </button>
+
+            </div>
+
+
+            <!-- Timer -->
+            <div class="timer">
+
+                <span id="minutes">25</span>
+
+                <span class="colon">:</span>
+
+                <span id="seconds">00</span>
+
+            </div>
+
+
+            <!-- Current Session -->
+            <p class="session-text" id="sessionText">
+                Time to focus!
+            </p>
+
+
+            <!-- Controls -->
+            <div class="controls">
+
+                <button
+                    class="control-btn start"
+                    id="startBtn"
+                >
+                    ▶ Start
+                </button>
+
+                <button
+                    class="control-btn pause"
+                    id="pauseBtn"
+                >
+                    ⏸ Pause
+                </button>
+
+                <button
+                    class="control-btn reset"
+                    id="resetBtn"
+                >
+                    ↻ Reset
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Task Section -->
+        <section class="task-card">
+
+            <h2>📝 Current Task</h2>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="What are you working on?"
+            >
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <span class="stat-icon">🍅</span>
+
+                <h3 id="completedSessions">
+                    0
+                </h3>
+
+                <p>
+                    Sessions Completed
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-icon">⏱️</span>
+
+                <h3 id="focusMinutes">
+                    0
+                </h3>
+
+                <p>
+                    Focus Minutes
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-icon">🎯</span>
+
+                <h3 id="currentTask">
+                    No Task
+                </h3>
+
+                <p>
+                    Current Task
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                Stay focused • Take breaks • Be productive
+            </p>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
